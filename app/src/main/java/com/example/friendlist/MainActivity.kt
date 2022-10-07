@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-    var frienddata = arrayOf<String>("Lincia","Loharano","Henintsoa","Karen","Kanto","Aina","Mia","Julia","Carine",
-            "Iris","Chloé","Agathe","Léa","Léna","Charlie","Inès")
+    var frienddata = arrayOf<String>("Lincia","Loharano","Henintsoa","Karen","Kanto","Aina","Mia","Mialisoa","Carine",
+            "Iris","Chloé","Muriel","Soa","Louane","Ifaliana","Inès", "Finoana","Léa","Henika","Harena","Camille","Mihasina","Mia","Julia","Carine",
+        "Iriana","Cathya","Mégan","Fanambinantsoa","Tsanta","Fitiavane","Ihorenantsoa")
     val adapter = Friendlistadapter (frienddata)
 
     //val imageId = listOf<Int>(
@@ -38,8 +39,5 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager=LinearLayoutManager(this)
         recyclerView.adapter = adapter
 
-        //adding line decoration
-    val decor = DividerItemDecoration(this, RecyclerView.VERTICAL)
-    recyclerView.addItemDecoration(decor)
     }
 }
